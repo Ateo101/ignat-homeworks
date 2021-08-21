@@ -1,0 +1,81 @@
+.Message {
+    margin-top: 15px;
+    display: grid;
+    grid-template-areas:
+        ". ma mc .";
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr 300px 25fr;
+}
+
+/*". ma mu ."
+". . mt ."
+". . mtt .";
+grid-template-rows: 30px 1fr 25px;
+grid-template-columns: 2fr 1fr 300px 25fr;*/
+
+.message-avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    grid-area: ma;
+    border: solid #36af36;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.message-avatar img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message-username {
+    grid-area: mu;
+    align-self: center;
+    color: green;
+}
+
+.message-text {
+    grid-area: mt;
+    margin-bottom: 5px;
+}
+
+.message-time {
+    grid-area: mtt;
+    justify-self: end;
+    color: green;
+}
+
+.message-container {
+    grid-area: mc;
+    display: grid;
+    grid-template-areas:
+    "mu ."
+    "mt ."
+    ". mtt";
+    grid-template-rows: 20px 1fr 20px;
+    grid-template-columns: 10fr 0;
+    background-color: beige;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    border-bottom: outset;
+    border-bottom-color: #dfdfa4;
+    border-right: outset;
+    border-right-color: #dfdfa4;
+}
+
+.message-container::after {
+    content: "";
+    top: -7.5px;
+    left: 3px;
+    height: 1.8em;
+    background: #d2d2b1;
+    position: absolute;
+    width: 20px;
+    border-radius: 0% 0% 0% 100%;
+    transform: rotate(120deg);
+    z-index: -1;
+}
