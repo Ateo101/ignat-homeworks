@@ -1,7 +1,20 @@
-.someClass {
-
+.btn {
+    margin: 0 10px 0 10px;
 }
 
 .error {
     border: 1px solid red;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+
+.filled {
+    border: 1px solid green;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+
+.errorMsg{
+    margin-left: 2px;
+    color: lightcoral;
 }
