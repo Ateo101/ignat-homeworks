@@ -1,0 +1,33 @@
+.dropdown-menu{
+    display: contents;
+}
+
+.dropbtn{
+    padding: 8px 16px!important;
+    font-size: 16px;
+}
+
+.dropbtn:hover{
+    cursor: pointer;
+}
+
+.dropdown-content {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.nav{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav a{
+    color: black;
+}
+
+.dropdown-menu:hover .dropdown-content {height: 20px;}
