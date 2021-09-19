@@ -2,6 +2,14 @@
 
 }
 
+label:hover {
+    cursor: pointer;
+}
+
+.checkbox:hover {
+    cursor: pointer;
+}
+
 .spanClassName {
 
 }
