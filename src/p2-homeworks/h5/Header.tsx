@@ -6,7 +6,7 @@ import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 function Header() {
     return (
         <div className={'dropdown-menu'}>
-            <SuperButton className={'dropbtn'} onClick={()=>{}}>Menu</SuperButton>
+            <SuperButton className={'dropbtn'} style={{marginLeft: '10px'}}>Menu</SuperButton>
             <div className={'dropdown-content'}>
                 <div className={'nav'}><NavLink to={"/pre-junior"}>Pre Junior</NavLink></div>
                 <div className={'nav'}><NavLink to={"/junior"}>Junior</NavLink></div>
