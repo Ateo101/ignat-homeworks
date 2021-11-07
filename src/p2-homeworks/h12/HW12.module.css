@@ -21,3 +21,11 @@
 .some-text {
     color: darkslateblue;
 }
+
+.ateo {
+    background-image: url(https://ehyt.fi/wp-content/uploads/2020/10/pexels-max-andrey-1254736.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    color: white;
+}

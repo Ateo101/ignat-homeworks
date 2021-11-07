@@ -1,14 +1,22 @@
+export type themeType = {
+    currentTheme: string
+}
 const initState = {
-
+    currentTheme: 'ateo'
 };
 
-export const themeReducer = (state = initState, action: any): any => { // fix any
+export const themeReducer = (state:themeType = initState, action: changeThemeACType): themeType => { // fix any
     switch (action.type) {
-        case "": {
-            return state;
+        case "CHANGE-THEME": {
+            return {...state, currentTheme: action.theme};
         }
         default: return state;
     }
 };
 
-export const changeThemeC = (): any => {}; // fix any
+type changeThemeACReturnType = {
+    type: "CHANGE-THEME", theme: string
+}
+type changeThemeACType = ReturnType<typeof changeThemeAC>
+export const changeThemeAC = (theme:string): changeThemeACReturnType =>
+{ return { type: "CHANGE-THEME", theme} as const};
